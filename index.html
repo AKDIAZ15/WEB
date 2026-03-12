@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -260,4 +261,268 @@
     <script src="scripts/main.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master's Salon | Luxury Unisex Salon</title>
+    <meta name="description"
+        content="Experience premium luxury at Master's Salon. Expert styling, coloring, and grooming for men and women in a sophisticated setting.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <!-- Specific page styles will go here -->
+    <style>
+        /* Hero Animation Styles */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--color-bg-primary);
+            /* Fallback */
+            overflow: hidden;
+            text-align: center;
+            padding: 0 var(--spacing-3);
+        }
+
+        #hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            opacity: 0.6;
+            /* Darken slightly for text contrast */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+            animation: fadeIn 1s ease-out;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            /* Better readability over video */
+        }
+
+        .hero h1 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-3);
+        }
+
+        .hero p {
+            font-size: var(--font-size-xl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-4);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">MASTER'S <span>SALON</span></a>
+
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </nav>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-mobile" id="mobileNav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-content">
+                <p class="uppercase text-gold" style="letter-spacing: 3px; font-size: 0.9rem;">The Art of Excellence</p>
+                <h1>Redefining Luxury Grooming</h1>
+                <p>Experience world-class styling in an atmosphere of refined elegance.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="services.html" class="btn btn-primary">Our Services</a>
+                    <a href="gallery.html" class="btn btn-outline">View Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container text-center">
+                <span class="uppercase text-gold" style="font-size: 0.8rem; letter-spacing: 2px;">Welcome</span>
+                <h2 style="margin-bottom: var(--spacing-4);">The Master's Experience</h2>
+                <p style="max-width: 700px; margin: 0 auto; font-size: var(--font-size-lg);">
+                    We believe that true luxury lies in the details. From our expert stylists to our curated products,
+                    every aspect of Master's Salon is designed to provide you with an unparalleled experience.
+                    Step into a world where your style is our masterpiece.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Services -->
+        <section class="section" style="background-color: var(--color-bg-secondary);">
+            <div class="container">
+                <div class="text-center" style="margin-bottom: var(--spacing-8);">
+                    <h2>Our Expertise</h2>
+                    <p>Tailored treatments for the modern individual.</p>
+                </div>
+
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-6);">
+                    <!-- Card 1 -->
+                    <div
+                        style="position: relative; height: 300px; overflow: hidden; border-radius: var(--border-radius-md);">
+                        <img src="https://images.unsplash.com/photo-1596704017382-30538038f971?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Styling" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; width: 100%; padding: var(--spacing-4); background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+                            <h3>Precision Cuts</h3>
+                            <a href="services.html" class="btn btn-outline"
+                                style="border-width: 1px; font-size: 0.8rem; padding: 4px 12px;">View Menu</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        style="position: relative; height: 300px; overflow: hidden; border-radius: var(--border-radius-md);">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Color" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; width: 100%; padding: var(--spacing-4); background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+                            <h3>Custom Color</h3>
+                            <a href="services.html" class="btn btn-outline"
+                                style="border-width: 1px; font-size: 0.8rem; padding: 4px 12px;">View Menu</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        style="position: relative; height: 300px; overflow: hidden; border-radius: var(--border-radius-md);">
+                        <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                            alt="Grooming" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;">
+                        <div
+                            style="position: absolute; bottom: 0; left: 0; width: 100%; padding: var(--spacing-4); background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);">
+                            <h3>Signature Grooming</h3>
+                            <a href="services.html" class="btn btn-outline"
+                                style="border-width: 1px; font-size: 0.8rem; padding: 4px 12px;">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section">
+            <div class="container text-center">
+                <h2 style="margin-bottom: var(--spacing-10);">Client Stories</h2>
+                <div class="grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-8);">
+                    <div
+                        style="padding: var(--spacing-6); border: 1px solid var(--color-border); border-radius: var(--border-radius-md);">
+                        <p style="font-style: italic; margin-bottom: var(--spacing-4);">"Absolutely the best salon
+                            experience I've ever had. The attention to detail is unmatched."</p>
+                        <h4 style="font-size: var(--font-size-base); color: var(--color-accent);">James T.</h4>
+                    </div>
+                    <div
+                        style="padding: var(--spacing-6); border: 1px solid var(--color-border); border-radius: var(--border-radius-md);">
+                        <p style="font-style: italic; margin-bottom: var(--spacing-4);">"My hair has never looked
+                            better. Sarah is a true artist. Highly recommend!"</p>
+                        <h4 style="font-size: var(--font-size-base); color: var(--color-accent);">Emily R.</h4>
+                    </div>
+                    <div
+                        style="padding: var(--spacing-6); border: 1px solid var(--color-border); border-radius: var(--border-radius-md);">
+                        <p style="font-style: italic; margin-bottom: var(--spacing-4);">"The atmosphere is so relaxing
+                            and luxurious. It's my favorite monthly ritual."</p>
+                        <h4 style="font-size: var(--font-size-base); color: var(--color-accent);">Michael B.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display:block; margin-bottom: 16px;">MASTER'S
+                        <span>SALON</span></a>
+                    <p>Elevating your style with precision and passion.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Luxury Lane, Cityville</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>hello@masterssalon.com</p>
+                    <div class="flex gap-2" style="margin-top: 16px;">
+                        <!-- Social placeholders -->
+                        <a href="#">IG</a> <a href="#">FB</a> <a href="#">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Master's Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+>>>>>>> d915add50d8304c810540e595d6e915a934cb258
 </html>
