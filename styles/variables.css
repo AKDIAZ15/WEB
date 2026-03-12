@@ -1,0 +1,51 @@
+:root {
+  /* Colors */
+  --color-bg-primary: #121212;
+  --color-bg-secondary: #1E1E1E;
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #B0B0B0;
+  --color-accent: #D4AF37; /* Gold */
+  --color-accent-hover: #C5A028;
+  --color-border: #333333;
+  --color-overlay: rgba(0, 0, 0, 0.7);
+
+  /* Typography */
+  --font-family-headings: 'Playfair Display', serif;
+  --font-family-body: 'Inter', sans-serif;
+  
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 2rem;     /* 32px */
+  --font-size-4xl: 2.5rem;   /* 40px */
+  --font-size-5xl: 3rem;     /* 48px */
+  --font-size-6xl: 4rem;     /* 64px */
+
+  /* Spacing (8px Grid) */
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 40px;
+  --spacing-6: 48px;
+  --spacing-8: 64px;
+  --spacing-10: 80px;
+  --spacing-12: 96px;
+  --spacing-16: 128px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-bounce: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

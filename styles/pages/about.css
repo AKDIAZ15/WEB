@@ -1,0 +1,63 @@
+/* About Page Styles */
+
+.about-intro {
+    padding: var(--spacing-16) 0 var(--spacing-10);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-8);
+}
+
+.team-member {
+    text-align: center;
+    background-color: var(--color-bg-secondary);
+    padding: var(--spacing-6);
+    border-radius: var(--border-radius-md);
+    transition: transform var(--transition-normal);
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto var(--spacing-4);
+    border: 2px solid var(--color-accent);
+}
+
+.member-name {
+    font-family: var(--font-family-headings);
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-1);
+}
+
+.member-role {
+    color: var(--color-accent);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: var(--spacing-3);
+}
+
+.member-bio {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}

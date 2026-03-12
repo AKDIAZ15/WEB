@@ -1,0 +1,65 @@
+/* Gallery Page Styles */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-4);
+    padding-bottom: var(--spacing-10);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    aspect-ratio: 3/4;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    display: flex;
+    align-items: flex-end;
+    padding: var(--spacing-4);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-caption {
+    transform: translateY(20px);
+    transition: transform var(--transition-normal);
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+.gallery-caption h4 {
+    margin-bottom: var(--spacing-1);
+    color: var(--color-white);
+    font-size: var(--font-size-lg);
+}
+
+.gallery-caption p {
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+}

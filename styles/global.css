@@ -1,0 +1,140 @@
+/* Global Styles */
+
+body {
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-headings);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-2);
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+}
+
+h2 {
+    font-size: var(--font-size-4xl);
+}
+
+h3 {
+    font-size: var(--font-size-3xl);
+}
+
+h4 {
+    font-size: var(--font-size-2xl);
+}
+
+p {
+    margin-bottom: var(--spacing-2);
+    color: var(--color-text-secondary);
+}
+
+/* Utilities */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-3);
+}
+
+.section {
+    padding: var(--spacing-10) 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-gold {
+    color: var(--color-accent);
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: var(--spacing-2);
+}
+
+.gap-4 {
+    gap: var(--spacing-4);
+}
+
+.grid {
+    display: grid;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-2) var(--spacing-4);
+    font-family: var(--font-family-body);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-normal);
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-bg-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg-primary);
+    transform: translateY(-2px);
+}

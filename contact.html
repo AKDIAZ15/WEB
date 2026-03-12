@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Booking | Master's Salon</title>
+    <meta name="description"
+        content="Book your appointment at Master's Salon. Visit us for a luxury grooming experience.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/pages/contact.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">MASTER'S <span>SALON</span></a>
+
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </nav>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-mobile" id="mobileNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact & Booking</h1>
+                <p>We look forward to welcoming you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Info Side -->
+                    <div>
+                        <div class="contact-info-box">
+                            <h3>Get in Touch</h3>
+                            <div class="info-item">
+                                <span class="info-label">Address:</span>
+                                <span class="info-value">123 Luxury Lane, Suite 100<br>Cityville, ST 12345</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Phone:</span>
+                                <span class="info-value">+1 (555) 123-4567</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">hello@masterssalon.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-box">
+                            <h3>Hours</h3>
+                            <div class="info-item">
+                                <span class="info-label" style="width: 100px;">Mon - Fri:</span>
+                                <span class="info-value">10:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" style="width: 100px;">Saturday:</span>
+                                <span class="info-value">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label" style="width: 100px;">Sunday:</span>
+                                <span class="info-value">Closed</span>
+                            </div>
+                        </div>
+
+                        <div class="map-placeholder">
+                            [Interactive Map Placeholder]
+                        </div>
+                    </div>
+
+                    <!-- Form Side -->
+                    <div>
+                        <div class="booking-form">
+                            <h3 class="text-center"
+                                style="margin-bottom: var(--spacing-6); color: var(--color-accent);">Request Appointment
+                            </h3>
+                            <form action="#" method="POST">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service" class="form-label">Service of Interest</label>
+                                    <select id="service" name="service" class="form-select">
+                                        <option value="cut">Haircut</option>
+                                        <option value="color">Color/Treatment</option>
+                                        <option value="styling">Blowout/Styling</option>
+                                        <option value="grooming">Grooming/Shave</option>
+                                        <option value="consultation">General Consultation</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date" class="form-label">Preferred Date</label>
+                                    <input type="date" id="date" name="date" class="form-input">
+                                </div>
+                                <div class="form-group">
+                                    <label for="notes" class="form-label">Notes or Special Requests</label>
+                                    <textarea id="notes" name="notes" class="form-textarea"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit
+                                    Request</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display:block; margin-bottom: 16px;">MASTER'S
+                        <span>SALON</span></a>
+                    <p>Elevating your style with precision and passion.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Luxury Lane, Cityville</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>hello@masterssalon.com</p>
+                    <div class="flex gap-2" style="margin-top: 16px;">
+                        <!-- Social placeholders -->
+                        <a href="#">IG</a> <a href="#">FB</a> <a href="#">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Master's Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
