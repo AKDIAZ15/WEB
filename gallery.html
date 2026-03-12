@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gallery | Master's Salon</title>
+    <meta name="description"
+        content="View our portfolio of precision haircuts, stunning color transformations, and expert styling work.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/pages/gallery.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">MASTER'S <span>SALON</span></a>
+
+            <nav class="nav-desktop">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Book Now</a>
+            </nav>
+
+            <div class="mobile-toggle" id="mobileToggle">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="nav-mobile" id="mobileNav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Book Now</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section text-center" style="padding-top: var(--spacing-16);">
+            <div class="container">
+                <h1>Our Work</h1>
+                <p>A showcase of style, precision, and artistry.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Men's Haircut">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Classic Gent</h4>
+                            <p>Precision Cut & Style</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Women's Coloring">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Sun-Kissed Balayage</h4>
+                            <p>Color & Treatment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Styling">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Modern Waves</h4>
+                            <p>Blowout & Style</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b7f304?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Beard Trim">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Sharp Edges</h4>
+                            <p>Beard Grooming</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Creative Color">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Vivid Transformation</h4>
+                            <p>Creative Color</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        alt="Elegant Updo">
+                    <div class="gallery-overlay">
+                        <div class="gallery-caption">
+                            <h4>Evening Elegance</h4>
+                            <p>Event Styling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="display:block; margin-bottom: 16px;">MASTER'S
+                        <span>SALON</span></a>
+                    <p>Elevating your style with precision and passion.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>123 Luxury Lane, Cityville</p>
+                    <p>+1 (555) 123-4567</p>
+                    <p>hello@masterssalon.com</p>
+                    <div class="flex gap-2" style="margin-top: 16px;">
+                        <!-- Social placeholders -->
+                        <a href="#">IG</a> <a href="#">FB</a> <a href="#">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Master's Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
